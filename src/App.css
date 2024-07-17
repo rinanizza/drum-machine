@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#drum-machine {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  text-align: center;
+}
+
+#display {
+  margin: 20px;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.drum-pad {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.drum-pad:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.drum-pad:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.drum-pad audio {
+  display: none;
+}
+
+h1 {
+  background-color: white;
+  color: black;
+  width: 101%;
+  border-radius: 19px;
+  border: 3px solid blue;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif; /* Ensuring h1 uses the new font-family */
+  text-align: center;
+}
